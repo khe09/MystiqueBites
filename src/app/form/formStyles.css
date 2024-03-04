@@ -1,0 +1,115 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(69, 21, 21); /* Set the height to 100% of the viewport height */
+}
+.form-container h1{
+  color:rgb(216, 208, 208);
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: 28px;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+.form-container p{
+  color:rgb(241, 237, 235);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size:16px;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+}
+
+.levels{
+  padding:60px 100px;
+  background-color: rgb(245, 245, 245);
+  border-radius: 8%;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background: linear-gradient(45deg, rgba(247, 247, 247, 0.5), rgba(0, 0, 0, 0.2));
+  box-shadow: 0px 8px 10px rgba(255, 254, 254, 0.527);
+}
+.levels h2{
+  color:white;
+  text-align: center;
+  
+}
+
+.search-button{
+  border:none;
+  margin-top: 20px;
+  padding: 15px 30px;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  background-color: rgb(229, 221, 221);
+}
+
+/* Number input bubbles*/
+
+.number-input {
+  display: flex;
+  text-align: center;
+  align-items: center; 
+  text-align: center;
+}
+
+.bubble {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: rgb(205, 199, 187);
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.bubble.active {
+  background-color: rgb(94, 3, 3); /* Change to desired color */
+  /* Firecracker animation */
+}
+/* Sparkle animation */
+@keyframes sparkle {
+  0% {
+    opacity: 0;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+
+/* Sparkle element */
+.sparkle {
+  position: absolute;
+
+}
+
+.sparkle::before,
+.sparkle::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(237, 237, 198); /* Adjust color as desired */
+  border-radius: 50%;
+  animation: sparkle 1.5s ease-in-out infinite;
+}
+
+/* Adjust sparkle position */
+.sparkle::before {
+  top: -5px;
+  left: -5px;
+}
+
+.sparkle::after {
+  bottom: -5px;
+  right: -5px;
+}

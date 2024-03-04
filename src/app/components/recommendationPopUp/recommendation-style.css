@@ -1,0 +1,39 @@
+
+
+.popup-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    backdrop-filter: blur(5px); /* Blur effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.433);
+    
+}
+.popup ul{
+    list-style-type: none;
+}
+
+.popup button {
+    margin-top: 10px;
+}
+
+.TryAgain{
+    border:none;
+    display:block;
+    margin:0 auto;
+    padding: 10px 30px;
+    border-radius: 8px;
+    background-color: black;
+    color:white;
+}
